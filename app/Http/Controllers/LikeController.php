@@ -12,9 +12,7 @@ class LikeController extends Controller
     {
     $post->likes()->create([
         "user_id"=> $request->user()->id,
-
-
-     ]);
+  ]);
      return back();
     }
     public function destroy(Request $request, Post $post)
